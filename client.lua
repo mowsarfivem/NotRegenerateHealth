@@ -1,7 +1,6 @@
 Citizen.CreateThread(function()
     while true do
-        local vie = GetEntityHealth(PlayerPedId())
-        SetEntityHealth(PlayerPedId(), vie)
-        Citizen.Wait(1)
+            Citizen.Wait(0)
+        SetPlayerHealthRechargeMultiplier(PlayerId(), 0.0)
     end
 end)
